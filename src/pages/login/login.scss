@@ -1,0 +1,27 @@
+login-page {
+    .input-has-focus .label-md[floating] {
+        color: #FB9B00
+    }
+    .background {
+        background: url(../assets/img/login-background.png)no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    .logo {
+        margin-top: 5%;
+    }
+    .loginCard {
+        opacity: 0.8;
+        margin-top: 25%;
+    }
+    .loginButton {
+        background-color: #FB9B00
+    }
+    .forgotPwd {
+        text-align: center;
+    }
+}
