@@ -1,0 +1,25 @@
+<ion-nav swipeBackEnabled="false"></ion-nav>
+<ion-content class="background">
+    <div class="logo" text-center>
+        <img src="assets/img/logo-default.png" style="width: 80%;">
+    </div>
+    <ion-card class="loginCard">
+        <form [formGroup]="user" (ngSubmit)="loginMe()">
+            <ion-list no-lines>
+                <ion-item>
+                    <ion-label floating>{{'username' | translate}}</ion-label>
+                    <ion-input type="email" formControlName="username"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label floating>{{'pwd' | translate}}</ion-label>
+                    <ion-input type="password" formControlName="password"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <button ion-button [disabled]="loginDisabled" type="submit" class="loginButton" block>{{'signIn' | translate}}</button>
+                </ion-item>
+            </ion-list>
+        </form>
+        <p (click)="openForgotPassword()" class="forgotPwd">
+            <ion-icon ios="ios-lock" md="md-lock"></ion-icon>{{'forgotPwd'|translate}}</p>
+    </ion-card>
+</ion-content>
